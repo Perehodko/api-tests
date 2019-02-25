@@ -74,14 +74,7 @@ class TestPositiveTestsPet(unittest.TestCase):
             if myJSONResponse[i]['id']==11:
                 n += 1
                 print (myJSONResponse[i])
-        if n == 0:
-            print ("no record in database!!!")
-
-
-        
-        
-
-
+        self.assertEqual(1, n, "No record in database!!!")
 
 if __name__ == "__main__":
     unittest.main()
