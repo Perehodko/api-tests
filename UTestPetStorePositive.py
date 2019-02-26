@@ -19,7 +19,8 @@ class TestPositiveTestsPet(unittest.TestCase):
 
         response = requests.post(url, data=payload, headers=headers)
 
-        self.assertEqual(200, response.status_code, ('Status code should be is 200. Current status code is %d.' % response.status_code))
+        self.assertEqual(200, response.status_code, ('Status code should be is 200. Current status code is %d.'
+                                                     % response.status_code))
 
 
     # Find pet by ID
@@ -35,11 +36,14 @@ class TestPositiveTestsPet(unittest.TestCase):
         # parsing JSON response
         myJSONResponse = json.loads(response.text)
 
-        self.assertEqual(200, response.status_code, ('Status code should be is 200. Current status code is %d.' % response.status_code))
-        self.assertEqual(11, myJSONResponse['id'], ('Field value "id" should be is 11. Current status code is %d.' % myJSONResponse['id']))
+        self.assertEqual(200, response.status_code,
+                         ('Status code should be is 200. Current status code is %d.' % response.status_code))
+        self.assertEqual(11, myJSONResponse['id'],
+                         ('Field value "id" should be is 11. Current status code is %d.' % myJSONResponse['id']))
         self.assertEqual("Tom", myJSONResponse['category']['name'],
                          ('Field value "name" should be is "Tom". Current value is %s.' % myJSONResponse['category']['name']))
-        self.assertEqual("available",  myJSONResponse['status'], ('Field value "status" should be is "available". Current value is %s.' % myJSONResponse['status']))
+        self.assertEqual("available",  myJSONResponse['status'],
+                         ('Field value "status" should be is "available". Current value is %s.' % myJSONResponse['status']))
 
 
     # Update an existing pet
@@ -58,12 +62,12 @@ class TestPositiveTestsPet(unittest.TestCase):
         # parsing JSON response
         myJSONResponse = json.loads(response.text)
         
-        self.assertEqual(200, response.status_code, ('Status code should be is 200. Current status code is %d.'
-                                                     % response.status_code))
-        self.assertEqual(1, myJSONResponse['tags'][0]['id'], ('Field value "id" should be is 1. Current status code is %d.'
-                                                              % myJSONResponse['tags'][0]['id']))
-        self.assertEqual("wild", myJSONResponse['tags'][0]['name'], ('Field value "name" should be is "wild". Current value is %s.'
-                                                                     % myJSONResponse['tags'][0]['name']))
+        self.assertEqual(200, response.status_code,
+                         ('Status code should be is 200. Current status code is %d.' % response.status_code))
+        self.assertEqual(1, myJSONResponse['tags'][0]['id'],
+                         ('Field value "id" should be is 1. Current status code is %d.' % myJSONResponse['tags'][0]['id']))
+        self.assertEqual("wild", myJSONResponse['tags'][0]['name'],
+                         ('Field value "name" should be is "wild". Current value is %s.' % myJSONResponse['tags'][0]['name']))
 
 
     # Finds Pets by status
@@ -101,8 +105,8 @@ class TestPositiveTestsPet(unittest.TestCase):
 
         response = requests.post(url+petId, data=payload, headers=headers, params = querystring)
 
-        self.assertEqual(200, response.status_code, ('Status code should be is 200. Current status code is %d.'
-                                                     % response.status_code))
+        self.assertEqual(200, response.status_code,
+                         ('Status code should be is 200. Current status code is %d.' % response.status_code))
 
 
 if __name__ == "__main__":
