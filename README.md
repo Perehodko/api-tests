@@ -11,7 +11,11 @@ API тестируемого сервиса -- http://petstore.swagger.io/
 - POST
 - PUT 
 
-Установка:
+Установка библиотеки Requests:
 ```
 pip install requests
+```
+Установка модуля Unittest:
+```
+pip install unittest
 ```
