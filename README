@@ -10,3 +10,6 @@ API тестируемого сервиса -- http://petstore.swagger.io/
 - GET
 - POST
 - PUT
+
+Установка:
+pip install requests
