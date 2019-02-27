@@ -1,4 +1,6 @@
-API тестируемого сервиса -- http://petstore.swagger.io/
+API тестируемых сервисов:
+- http://petstore.swagger.io/
+- https://testbase.atlassian.net/wiki/spaces/USERS/overview
 
 Тестирование организованно с помошью:
 - Язык написания тестовых сценраиев Python3;
