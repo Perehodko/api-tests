@@ -10,6 +10,7 @@ class TestPositiveTestsPet(unittest.TestCase):
     # Add a new pet to the store
     # POST /pet
     def testCreatePet(self):
+
         url = "http://petstore.swagger.io/v2/pet"
         payload = "{\n  \"id\": 12,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"Jerry\"\n  }," \
                   "\n  \"name\": \"mouse\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": " \
@@ -27,8 +28,7 @@ class TestPositiveTestsPet(unittest.TestCase):
         self.assertEqual(12, myJSONResponse['id'],
                          ('Field value "id" should be is 12. Current status code is %d.' % myJSONResponse['id']))
         self.assertEqual("Jerry", myJSONResponse['category']['name'],
-                         ('Field value "name" should be is "Jerry". Current value is %s.' % myJSONResponse['category'][
-                             'name']))
+                         ('Field value "name" should be is "Jerry". Current value is %s.' % myJSONResponse['category']['name']))
 
 
     # Deletes a pet
@@ -44,6 +44,7 @@ class TestPositiveTestsPet(unittest.TestCase):
 
         self.assertEqual(200, response.status_code,
                          ('Status code should be is 200. Current status code is %d.' % response.status_code))
+
 
     # Get pet by ID
     # GET /pet/{petId}
