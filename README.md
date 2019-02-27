@@ -10,6 +10,7 @@ API тестируемого сервиса -- http://petstore.swagger.io/
 - GET
 - POST
 - PUT 
+- DELETE
 
 Установка библиотеки Requests:
 ```
