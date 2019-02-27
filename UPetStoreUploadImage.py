@@ -32,8 +32,9 @@ class TestUploadImage(unittest.TestCase):
 
         url = "http://users.bugred.ru/tasks/rest/addavatar/"
         querystring = {"email": "goldy@mail.com"}
-        payload = payload = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"avatar\"; " \
-                            "filename=\"goldi.jpg\"\r\nContent-Type: image/jpeg\r\n\r\n\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--"
+        payload = payload = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; " \
+                            "name=\"avatar\"; filename=\"goldi.jpg\"\r\nContent-Type: image/jpeg" \
+                            "\r\n\r\n\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--"
         headers = {'content-type': "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW"}
 
         response = requests.post(url, data = payload, headers = headers, params = querystring)
