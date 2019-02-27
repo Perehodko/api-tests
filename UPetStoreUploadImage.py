@@ -32,12 +32,15 @@ class TestUploadImage(unittest.TestCase):
 
         url = "http://users.bugred.ru/tasks/rest/addavatar/"
         querystring = {"email": "goldy@mail.com"}
-        payload = payload = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"avatar\"; filename=\"goldi.jpg\"\r\nContent-Type: image/jpeg\r\n\r\n\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--"
+        payload = payload = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"avatar\"; " \
+                            "filename=\"goldi.jpg\"\r\nContent-Type: image/jpeg\r\n\r\n\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--"
         headers = {'content-type': "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW"}
 
         response = requests.post(url, data = payload, headers = headers, params = querystring)
         self.assertEqual(200, response.status_code,
                          ('Status code should be is 200. Current status code is %d.' % response.status_code))
+
+
     # get user data
     # GET /rest/getuser
     def testGetUserdata(self):
@@ -56,6 +59,7 @@ class TestUploadImage(unittest.TestCase):
                          ('Status code should be is 200. Current status code is %d.' % response.status_code))
         self.assertEqual("http://users.bugred.ru//tmp/files/goldi.jpg", myJSONResponse['avatar'],
                          ('Field value "id" should be is 11. Current status code is %s.' % myJSONResponse['avatar']))
+
 
 
 if __name__ == "__main__":
