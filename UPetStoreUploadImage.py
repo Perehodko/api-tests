@@ -62,8 +62,6 @@ class TestUploadImage(unittest.TestCase):
     def testGetUserdata(self):
         url = "http://users.bugred.ru/tasks/rest/getuser"
         querystring = {"email": "goldy@mail.com"}
-        payload = ""
-        headers = ""
 
         response = requests.get(url, data=payload, headers=headers, params=querystring)
 
