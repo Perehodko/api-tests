@@ -63,7 +63,7 @@ class TestUploadImage(unittest.TestCase):
         url = "http://users.bugred.ru/tasks/rest/getuser"
         querystring = {"email": "goldy@mail.com"}
 
-        response = requests.get(url, data=payload, headers=headers, params=querystring)
+        response = requests.get(url, params=querystring)
 
         # parsing JSON response
         myJSONResponse = json.loads(response.text)
