@@ -71,7 +71,8 @@ class TestUploadImage(unittest.TestCase):
         self.assertEqual(200, response.status_code,
                          ('Status code should be is 200. Current status code is %d.' % response.status_code))
         self.assertEqual("http://users.bugred.ru//tmp/files/goldi.jpg", myJSONResponse['avatar'],
-                         ('Field value "id" should be is 11. Current status code is %s.' % myJSONResponse['avatar']))
+                         ('Field value "avatar" should be is "http://users.bugred.ru//tmp/files/goldi.jpg". '
+                          'Current status code is %s.' % myJSONResponse['avatar']))
 
 
 if __name__ == "__main__":
