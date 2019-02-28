@@ -53,10 +53,9 @@ class TestPositiveTestsPet(unittest.TestCase):
     def testDeletePet(self):
         url = "http://petstore.swagger.io/v2/pet/"
         petId = "12"
-        payload = ""
         headers = {'Content-Type': "application/json"}
 
-        response = requests.delete(url + petId, data=payload, headers=headers)
+        response = requests.delete(url + petId, headers=headers)
 
         self.assertEqual(200, response.status_code,
                          ('Status code should be is 200. Current status code is %d.' % response.status_code))
