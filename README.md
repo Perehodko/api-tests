@@ -23,9 +23,12 @@ pip install requests
 pip install unittest
 ```
 Запуск тестов из консоли Linux:
+1) Перейти в директорию, где хранятся ваши тесты:
 ```
 cd /path-to-tests/
-
+```
+2) Запустить весь набор тестов с выводом результатов в консоль:
+```
 python UTestPetStorePositive.py; 
 python UTestsPetStoreDeletePet.py; 
 python UTestUploadImage.py; 
