@@ -29,8 +29,8 @@ cd /path-to-tests/
 ```
 2) Запустить весь набор тестов с выводом результатов в консоль:
 ```
-python UTestPetStorePositive.py; 
-python UTestsPetStoreDeletePet.py; 
-python UTestUploadImage.py; 
-python UTestPetStoreNegative.py
+python UTestPetStorePositive.py -v; 
+python UTestsPetStoreDeletePet.py-v; 
+python UTestUploadImage.py -v; 
+python UTestPetStoreNegative.py -v
 ```
