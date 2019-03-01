@@ -24,6 +24,8 @@ pip install unittest
 ```
 Запуск тестов из консоли Linux:
 ```
+cd /path-to-tests/
+
 python UTestPetStorePositive.py; 
 python UTestsPetStoreDeletePet.py; 
 python UTestUploadImage.py; 
