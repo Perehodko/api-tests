@@ -24,5 +24,5 @@ pip install unittest
 ```
 Запуск тестов:
 ```
-python /path/UTestPetstorePositive.py
+python UTestPetStorePositive.py; python UTestsPetStoreDeletePet.py; python UTestUploadImage.py; python UTestPetStoreNegative.py
 ```
