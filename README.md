@@ -22,3 +22,7 @@ pip install requests
 ```
 pip install unittest
 ```
+Запуск тестов:
+```
+python /path/UTestPetstorePositive.py
+```
