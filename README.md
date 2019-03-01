@@ -22,7 +22,10 @@ pip install requests
 ```
 pip install unittest
 ```
-Запуск тестов:
+Запуск тестов из консоли Linux:
 ```
-python UTestPetStorePositive.py; python UTestsPetStoreDeletePet.py; python UTestUploadImage.py; python UTestPetStoreNegative.py
+python UTestPetStorePositive.py; 
+python UTestsPetStoreDeletePet.py; 
+python UTestUploadImage.py; 
+python UTestPetStoreNegative.py
 ```
