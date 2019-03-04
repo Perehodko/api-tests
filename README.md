@@ -26,6 +26,7 @@ cd /path-to-tests/
 ```
 2) Запустить весь набор тестов с выводом результатов в консоль:
 ```
-python PetStoreNegativeTests.py; python PetStorePositiveTests.py; python PetStoreTestsDeletePet.py; python UploadImageTests.py 
+python PetStoreNegativeTests.py; python PetStorePositiveTests.py; 
+python PetStoreTestsDeletePet.py; python UploadImageTests.py 
 
 ```
