@@ -25,4 +25,6 @@ pip install requests
 cd /path-to-tests/
 ```
 2) Запустить весь набор тестов с выводом результатов в консоль:
-
+```
+python PetStoreNegative.py 
+```
