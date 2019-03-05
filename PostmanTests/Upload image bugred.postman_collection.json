@@ -12,7 +12,26 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"email\": \"goldy@mail.com\",\n  \"name\": \"rest\",\n  \"tasks\": [12],\n  \"companies\": [36,37],\n  \"hobby\":\"swimming\",\n  \"adres\":\"Aquarium\",\n  \"name1\":\"Goldy Fish\",\n  \"surname1\":\"-\",\n  \"fathername1\":\"-\",\n  \"cat\":\"Tom\",\n  \"dog\":\"Spike\",\n  \"parrot\":\"NoName\",\n  \"cavy\":\"Troy\",\n  \"hamster\":\"Abed\",\n  \"squirrel\":\"Squirell\",\n  \"phone\":\"333 33 33\",\n  \"inn\":\"123456789012\",\n  \"gender\":\"f\",\n  \"birthday\":\"01.01.1900\",\n  \"date_start\":\"11.11.2000\"\n}"
+					"raw": "{\n  \"email\": \"goldy@mail.com\",\n  
+					\"name\": \"rest\",\n  
+				        \"tasks\": [12],\n  
+				        \"companies\": [36,37],\n  
+				        \"hobby\":\"swimming\",\n  
+				        \"adres\":\"Aquarium\",\n  
+				        \"name1\":\"Goldy Fish\",\n  
+				        \"surname1\":\"-\",\n  
+				        \"fathername1\":\"-\",\n  
+				        \"cat\":\"Tom\",\n  
+				        \"dog\":\"Spike\",\n  
+				        \"parrot\":\"NoName\",\n  
+				        \"cavy\":\"Troy\",\n  
+				        \"hamster\":\"Abed\",\n  
+				        \"squirrel\":\"Squirell\",\n  
+				        \"phone\":\"333 33 33\",\n  
+				        \"inn\":\"123456789012\",\n  
+				        \"gender\":\"f\",\n  
+				        \"birthday\":\"01.01.1900\",\n  
+				        \"date_start\":\"11.11.2000\"\n}"
 				},
 				"url": {
 					"raw": "http://users.bugred.ru/tasks/rest/createuser",
