@@ -63,7 +63,7 @@ def testGetPetFromId():
     else:
         pass
 
-    if myJSONResponse['category']['name'] != "Tom":
+    if myJSONResponse['category']['id'] != 1:
         print('Field value "id" should be is 11. Current status code is %d.' % myJSONResponse['id'])
     else:
         pass
